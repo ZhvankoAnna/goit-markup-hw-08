@@ -1,0 +1,74 @@
+.mailing-form__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.mailing-form__wraper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  @media screen and (min-width:1200px) {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+
+.mailing-form {
+  @include font(16px, 1.25);
+}
+
+.mailing-form__label {
+  text-align: center;
+}
+
+.mailing-form__field {
+  @media screen and (max-width:1199.98px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 358px;
+  }
+
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px;
+
+  color: inherit;
+  outline: unset;
+
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--light-txt-bg-color);
+  }
+}
+
+.mailing-btn {
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  color: var(--light-txt-bg-color);
+  background-color: var(--accent-color);
+
+  transition: background-color var(--transition-options);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-herobtn);
+  }
+}
+
+.mailing-btn__text {
+  display: block;
+}

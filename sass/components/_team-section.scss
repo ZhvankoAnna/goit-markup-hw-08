@@ -1,0 +1,61 @@
+.team {
+  @include section;
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+  }
+
+  background-color: var(--secondary-bg-color);
+}
+
+.team__title {
+  @extend %title;
+}
+
+.team__list {
+  @include grid;
+}
+
+.team__item {
+  @media screen and (min-width:480px) {
+  @include grid-item;
+  }
+
+  @media screen and (min-width:768px) {
+    @include grid-item(2);
+  }
+
+  @media screen and (min-width:1200px) {
+    @include grid-item(4);
+  }
+}
+
+.team__box {
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--light-txt-bg-color);
+  text-align: center;
+}
+
+.team__img {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.team__subtitle {
+  @extend %subtitle;
+
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  @include font(16px, 1.18);
+}
+
+.team__position {
+  margin-bottom: 16px;
+
+  @include font(16px, 1.18);
+}

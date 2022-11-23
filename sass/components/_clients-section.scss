@@ -1,0 +1,47 @@
+.clients {
+  @include section;
+}
+
+.clients__title {
+  @extend %title;
+}
+
+.clients__list {
+  @include grid;
+}
+
+.clients__item {
+  @include grid-item(2);
+
+  @media screen and (min-width: 768px) {
+    @include grid-item(3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include grid-item(6);
+  }
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 92px;
+  border: 1px solid var(--socials-link-color);
+  border-radius: 4px;
+
+  color: var(--socials-link-color);
+
+  transition: color var(--transition-options), border-color var(--transition-options);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.clients__logo {
+  fill: currentColor;
+}

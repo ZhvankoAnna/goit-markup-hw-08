@@ -1,0 +1,25 @@
+.address__text {
+  margin-bottom: 9px;
+
+  color: var(--light-txt-bg-color);
+  font-style: normal;
+}
+
+.address__link {
+  @extend %link;
+
+  color: var(--footer-contacts-color);
+  font-style: normal;
+  text-decoration: none;
+
+  transition: color var(--transition-options);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__item:first-child {
+  margin-bottom: 9px;
+}

@@ -1,0 +1,44 @@
+.preference {
+  @include section;
+
+  @media screen and (min-width:1200px) {
+    @include section(94px, 94px);
+  }
+}
+
+.preference__list {
+@include grid;
+}
+
+.preference__item {
+  @include grid-item;
+
+  @media screen and (min-width:768px) {
+    @include grid-item(2);
+  }
+
+  @media screen and (min-width:1200px) {
+    @include grid-item(4);
+  }
+}
+
+.preferences__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-bg-color);
+}
+
+.preference__subtitle {
+  @extend %subtitle;
+
+  @include font(14px, 1.14);
+
+  text-align: center;
+  text-transform: uppercase;
+}

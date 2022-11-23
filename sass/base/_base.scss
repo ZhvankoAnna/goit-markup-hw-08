@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+
+  color: var(--primary-text-color);
+  background-color: var(--light-txt-bg-color);
+  font-family: var(--primary-font-family);
+
+  @include font;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
