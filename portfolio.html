@@ -32,7 +32,7 @@
               <a class="nav__link" href="./index.html">Студія</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link  nav__link--current" href="./portfolio.html">Портфоліо</a>
+              <a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="">Контакти</a>
@@ -51,7 +51,7 @@
           </li>
           <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
+              <svg class="contacts__icon">
                 <use href="./images/icons.svg#phone-icon"></use>
               </svg>
               <p class="contacts__text">+38 096 111 11 11</p></a
@@ -59,7 +59,7 @@
           </li>
         </ul>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="burger-btn__icon" width="24" height="16">
+          <svg class="burger-btn__icon">
             <use href="./images/icons.svg#icon-burger-btn"></use>
           </svg>
         </button>
@@ -95,10 +95,18 @@
                 <div class="projects__img-box">
                   <img
                     class="projects__img"
-                    src="./images/portfolio-1.jpg"
+                    srcset="
+                      ./images/portfolio/img_354.jpg 354w,
+                      ./images/portfolio/img_370.jpg 370w,
+                      ./images/portfolio/img_450.jpg 450w,
+                      ./images/portfolio/img_708.jpg 708w,
+                      ./images/portfolio/img_740.jpg 740w,
+                      ./images/portfolio/img_900.jpg 900w
+                    "
+                    src="./images/portfolio/img_450.jpg"
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,
+                    (min-width:480px) 450px, 100vw"
                     alt="Ноутбук із зображенням сайту"
-                    width="370"
-                    height="294"
                   />
                   <p class="projects__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -117,10 +125,18 @@
                 <div class="projects__img-box">
                   <img
                     class="projects__img"
-                    src="./images/portfolio-2.jpg"
+                    srcset="
+                      ./images/portfolio/img-1_354.jpg 354w,
+                      ./images/portfolio/img-1_370.jpg 370w,
+                      ./images/portfolio/img-1_450.jpg 450w,
+                      ./images/portfolio/img-1_708.jpg 708w,
+                      ./images/portfolio/img-1_740.jpg 740w,
+                      ./images/portfolio/img-1_900.jpg 900w
+                    "
+                    src="./images/portfolio/img-1_450.jpg"
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,
+                    (min-width:480px) 450px, 100vw"
                     alt="Двоє баскетболістів сперечаються за м`яч"
-                    width="370"
-                    height="294"
                   />
                   <p class="projects__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -139,10 +155,18 @@
                 <div class="projects__img-box">
                   <img
                     class="projects__img"
-                    src="./images/portfolio-3.jpg"
+                    srcset="
+                      ./images/portfolio/img-2_354.jpg 354w,
+                      ./images/portfolio/img-2_370.jpg 370w,
+                      ./images/portfolio/img-2_450.jpg 450w,
+                      ./images/portfolio/img-2_708.jpg 708w,
+                      ./images/portfolio/img-2_740.jpg 740w,
+                      ./images/portfolio/img-2_900.jpg 900w
+                    "
+                    src="./images/portfolio/img-2_450.jpg"
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,
+                    (min-width:480px) 450px, 100vw"
                     alt="Емблема ресторану Seefod"
-                    width="370"
-                    height="294"
                   />
                   <p class="projects__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -159,13 +183,19 @@
             <li class="projects__item">
               <a href="" class="projects__link link">
                 <div class="projects__img-box">
-                  <img
-                    class="projects__img"
-                    src="./images/portfolio-4.jpg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <img class="projects__img"
+                  srcset="
+                      ./images/portfolio/img-3_354.jpg 354w,
+                      ./images/portfolio/img-3_370.jpg 370w,
+                      ./images/portfolio/img-3_450.jpg 450w,
+                      ./images/portfolio/img-3_708.jpg 708w,
+                      ./images/portfolio/img-3_740.jpg 740w,
+                      ./images/portfolio/img-3_900.jpg 900w
+                    "
+                    src="./images/portfolio/img-3_450.jpg"
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,
+                    (min-width:480px) 450px, 100vw"
+                  alt="Навушники" />
                   <p class="projects__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -181,13 +211,19 @@
             <li class="projects__item">
               <a href="" class="projects__link link">
                 <div class="projects__img-box">
-                  <img
-                    class="projects__img"
-                    src="./images/portfolio-5.jpg"
-                    alt="Дві коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <img class="projects__img"
+                  srcset="
+                      ./images/portfolio/img-4_354.jpg 354w,
+                      ./images/portfolio/img-4_370.jpg 370w,
+                      ./images/portfolio/img-4_450.jpg 450w,
+                      ./images/portfolio/img-4_708.jpg 708w,
+                      ./images/portfolio/img-4_740.jpg 740w,
+                      ./images/portfolio/img-4_900.jpg 900w
+                    "
+                    src="./images/portfolio/img-4_450.jpg"
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,
+                    (min-width:480px) 450px, 100vw"
+                  alt="Дві коробки" />
                   <p class="projects__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -205,10 +241,18 @@
                 <div class="projects__img-box">
                   <img
                     class="projects__img"
-                    src="./images/portfolio-6.jpg"
+                    srcset="
+                      ./images/portfolio/img-5_354.jpg 354w,
+                      ./images/portfolio/img-5_370.jpg 370w,
+                      ./images/portfolio/img-5_450.jpg 450w,
+                      ./images/portfolio/img-5_708.jpg 708w,
+                      ./images/portfolio/img-5_740.jpg 740w,
+                      ./images/portfolio/img-5_900.jpg 900w
+                    "
+                    src="./images/portfolio/img-5_450.jpg"
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,
+                    (min-width:480px) 450px, 100vw"
                     alt="Монітор із зображенням сайту"
-                    width="370"
-                    height="294"
                   />
                   <p class="projects__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -228,10 +272,18 @@
                 <div class="projects__img-box">
                   <img
                     class="projects__img"
-                    src="./images/portfolio-7.jpg"
+                    srcset="
+                      ./images/portfolio/img-6_354.jpg 354w,
+                      ./images/portfolio/img-6_370.jpg 370w,
+                      ./images/portfolio/img-6_450.jpg 450w,
+                      ./images/portfolio/img-6_708.jpg 708w,
+                      ./images/portfolio/img-6_740.jpg 740w,
+                      ./images/portfolio/img-6_900.jpg 900w
+                    "
+                    src="./images/portfolio/img-6_450.jpg"
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,
+                    (min-width:480px) 450px, 100vw"
                     alt="Розгорнутий журнал"
-                    width="370"
-                    height="294"
                   />
                   <p class="projects__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -250,10 +302,18 @@
                 <div class="projects__img-box">
                   <img
                     class="projects__img"
-                    src="./images/portfolio-8.jpg"
+                    srcset="
+                      ./images/portfolio/img-7_354.jpg 354w,
+                      ./images/portfolio/img-7_370.jpg 370w,
+                      ./images/portfolio/img-7_450.jpg 450w,
+                      ./images/portfolio/img-7_708.jpg 708w,
+                      ./images/portfolio/img-7_740.jpg 740w,
+                      ./images/portfolio/img-7_900.jpg 900w
+                    "
+                    src="./images/portfolio/img-7_450.jpg"
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,
+                    (min-width:480px) 450px, 100vw"
                     alt="Етикетка з написом Label Tag"
-                    width="370"
-                    height="294"
                   />
                   <p class="projects__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -272,10 +332,18 @@
                 <div class="projects__img-box">
                   <img
                     class="projects__img"
-                    src="./images/portfolio-9.jpg"
+                    srcset="
+                      ./images/portfolio/img-8_354.jpg 354w,
+                      ./images/portfolio/img-8_370.jpg 370w,
+                      ./images/portfolio/img-8_450.jpg 450w,
+                      ./images/portfolio/img-8_708.jpg 708w,
+                      ./images/portfolio/img-8_740.jpg 740w,
+                      ./images/portfolio/img-8_900.jpg 900w
+                    "
+                    src="./images/portfolio/img-8_450.jpg"
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,
+                    (min-width:480px) 450px, 100vw"
                     alt="Людина працює з додатком"
-                    width="370"
-                    height="294"
                   />
                   <p class="projects__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -384,5 +452,62 @@
         </div>
       </div>
     </footer>
+
+     <!-- Mobile menu -->
+     <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="close-btn menu-toggle js-close-menu" type="button" data-modal-close>
+        <svg class="close-btn-icon" width="18.67" height="18.67">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">Студія</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="mobile-menu__contacts">
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
+            <p class="contacts__text">info@devstudio.com</p></a
+          >
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+380961111111">
+            <p class="contacts__text">+38 096 111 11 11</p></a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="">Instagram</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="">Twitter</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="">Facebook</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

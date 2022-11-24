@@ -4,32 +4,70 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
 
   background-color: var(--bg-color-header);
-
-  @media screen and (min-width: 480px) {
-    background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
-      url(../images/hero-bg_mobile.jpg);
-  }
-
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
-      url(../images/hero-bg_tablet.jpg);
-  }
-
-  @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
-      url(../images/hero-bg_desktop.jpg);
-  }
-
   background-repeat: repeat, no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
+
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))),
+    url(../images/hero/hero-img_mb@1x.jpg);background-image: -o-linear-gradient(top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+    url(../images/hero/hero-img_mb@1x.jpg);background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+    url(../images/hero/hero-img_mb@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))),
+    url(../images/hero/hero-img_mb@2x.jpg);
+      background-image: -o-linear-gradient(top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+    url(../images/hero/hero-img_mb@2x.jpg);
+      background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+    url(../images/hero/hero-img_mb@2x.jpg);
+    }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+      url(../images/hero/hero-img_tb@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))),
+      url(../images/hero/hero-img_tb@2x.jpg);
+        background-image: -o-linear-gradient(top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+      url(../images/hero/hero-img_tb@2x.jpg);
+        background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+      url(../images/hero/hero-img_tb@2x.jpg);
+      }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+      url(../images/hero/hero-img_ds@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))),
+      url(../images/hero/hero-img_ds@2x.jpg);
+        background-image: -o-linear-gradient(top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+      url(../images/hero/hero-img_ds@2x.jpg);
+        background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+      url(../images/hero/hero-img_ds@2x.jpg);
+      }
+  }
 }
 
 .hero__title {
@@ -43,15 +81,15 @@
   @include font(26px, 1.62, 0.06em);
   text-transform: uppercase;
 
-  @media screen and (min-width:480px) {
+  @media screen and (min-width: 480px) {
     width: 360px;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 360px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     width: 696px;
     @include font(44px, 1.36);
   }

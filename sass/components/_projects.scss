@@ -1,12 +1,24 @@
 .projects {
-  @include section;
+  @include section(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+  }
 }
 
 .projects__list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 30px;
+  @include grid;
+}
+
+.projects__item {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    @include grid-item(2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include grid-item(3);
+  }
 }
 
 .projects__link {
@@ -23,6 +35,12 @@
   &:hover .projects__overlay-text {
     transform: translateY(0);
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 
 .projects__img-box {
@@ -37,6 +55,7 @@
 }
 
 .projects__subtitle-box {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
