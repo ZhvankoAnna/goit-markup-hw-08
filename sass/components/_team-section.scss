@@ -1,11 +1,11 @@
 .team {
   @include section;
 
+  background-color: var(--secondary-bg-color);
+
   @media screen and (min-width: 1200px) {
     @include section(94px, 94px);
   }
-
-  background-color: var(--secondary-bg-color);
 }
 
 .team__title {
@@ -17,7 +17,7 @@
 }
 
 .team__item {
-  @media screen and (min-width:480px) {
+  @media screen and (max-width:767px) {
   @include grid-item;
   }
 

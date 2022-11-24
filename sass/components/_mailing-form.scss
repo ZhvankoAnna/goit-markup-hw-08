@@ -1,6 +1,7 @@
 .mailing-form__box {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .mailing-form__wraper {
@@ -8,6 +9,7 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  width: 100%;
 
   @media screen and (min-width:1200px) {
     display: flex;
@@ -17,6 +19,7 @@
 }
 
 .mailing-form {
+  width: 100%;
   @include font(16px, 1.25);
 }
 
@@ -25,9 +28,7 @@
 }
 
 .mailing-form__field {
-  @media screen and (max-width:1199.98px) {
-    width: 450px;
-  }
+  width: 100%;
 
   @media screen and (min-width:1200px) {
     width: 358px;
