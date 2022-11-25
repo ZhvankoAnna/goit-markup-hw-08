@@ -1,7 +1,13 @@
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
 .address__text {
   margin-bottom: 9px;
 
   color: var(--light-txt-bg-color);
+  font-weight: 400;
   font-style: normal;
 }
 

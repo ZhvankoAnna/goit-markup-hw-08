@@ -1,7 +1,11 @@
 .mailing-form__box {
   display: flex;
   flex-direction: column;
-  width: 100%;
+
+  @media screen and (max-width: 1199.98px) {
+    max-width: 450px;
+    width: 100%;
+  }
 }
 
 .mailing-form__wraper {
@@ -9,9 +13,12 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  width: 100%;
 
-  @media screen and (min-width:1200px) {
+  @media screen and (max-width: 767.98px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
     gap: 12px;
@@ -20,6 +27,15 @@
 
 .mailing-form {
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
   @include font(16px, 1.25);
 }
 
@@ -29,11 +45,6 @@
 
 .mailing-form__field {
   width: 100%;
-
-  @media screen and (min-width:1200px) {
-    width: 358px;
-  }
-
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);

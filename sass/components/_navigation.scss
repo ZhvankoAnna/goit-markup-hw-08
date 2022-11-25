@@ -1,5 +1,5 @@
 .nav {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 
@@ -40,6 +40,10 @@
   color: var(--accent-color);
 
   &::after {
+    @media screen and (max-width:767.98px) {
+      display: none;
+    }
+
     position: absolute;
     content: '';
     width: 100%;
