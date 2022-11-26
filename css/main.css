@@ -367,6 +367,20 @@ a {
   transition: fill var(--transition-options);
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts__icon--mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon--phone {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .hero {
   margin-right: auto;
   margin-left: auto;

@@ -58,3 +58,17 @@
 
   transition: fill var(--transition-options);
 }
+
+.contacts__icon--mail {
+  @media screen and (min-width:1200px) {
+  width: 16px;
+  height: 12px;
+  }
+}
+
+.contacts__icon--phone {
+  @media screen and (min-width:1200px) {
+  width: 10px;
+  height: 16px;
+  }
+}
